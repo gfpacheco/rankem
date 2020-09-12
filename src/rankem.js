@@ -1,7 +1,7 @@
 const initialTolerance = 0.26;
 const defaultTolerance = 0.15;
 
-function rank(groupedScores) {
+function rankem(groupedScores) {
   return groupedScores.map(scores => {
     let currentScore = Number.MAX_SAFE_INTEGER;
     let currentRank = 0;
@@ -39,4 +39,4 @@ function rank(groupedScores) {
   });
 }
 
-module.exports = rank;
+module.exports = rankem;

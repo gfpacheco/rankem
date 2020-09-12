@@ -1,11 +1,11 @@
 const readFile = require('./readFile');
-const rank = require('./rank');
+const rankem = require('./rankem');
 const compare = require('./compare');
 const output = require('./output');
 
 async function run(scoresFilePath, test, ranksFilePath) {
   const groupedScores = await readFile(scoresFilePath);
-  const groupedRanks = rank(groupedScores);
+  const groupedRanks = rankem(groupedScores);
 
   if (test) {
     const expectedGroupedRanks = await readFile(ranksFilePath);
