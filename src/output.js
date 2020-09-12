@@ -8,7 +8,7 @@ async function output(groupedRanks, scoresFilePath, ranksFilePath) {
     .toString()
     .split('\n')
     .map(string => {
-      return string && flattenedRanks.shift();
+      return (string && flattenedRanks.shift()) || '';
     });
 
   await fs.promises.writeFile(ranksFilePath, ranksContent.join('\n'));
