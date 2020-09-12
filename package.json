@@ -1,0 +1,8 @@
+{
+  "name": "rankem",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Guilherme Pacheco",
+  "license": "MIT",
+  "private": true
+}
