@@ -4,5 +4,8 @@
   "main": "index.js",
   "author": "Guilherme Pacheco",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "scripts": {
+    "start": "node src/index.js"
+  }
 }
