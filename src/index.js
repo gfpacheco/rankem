@@ -1,10 +1,11 @@
-const getData = require('./getData');
+const readFile = require('./readFile');
+const rank = require('./rank');
 
-async function run(filePath) {
-  const records = await getData(filePath);
-  console.log(records);
+async function run(scoresFilePath) {
+  const groupedScores = await readFile(scoresFilePath);
+  const groupedRanks = rank(groupedScores);
 }
 
-const [, , filePath] = process.argv;
+const [, , scoresFilePath] = process.argv;
 
-run(filePath).catch(console.error);
+run(scoresFilePath).catch(console.error);
