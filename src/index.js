@@ -22,8 +22,8 @@ if (!scoresFilePath || !['-t', '-o'].includes(flag) || !ranksFilePath) {
 
     FLAG is one of:
 
-        -t  test computed ranks against ranks from RANKS_FILE_PATH
-        -o  output computed ranks to RANKS_FILE_PATH
+        -t  # test computed ranks against ranks from RANKS_FILE_PATH
+        -o  # output computed ranks to RANKS_FILE_PATH
 `);
   return;
 }
